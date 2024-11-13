@@ -9,7 +9,7 @@ namespace FortnitePorting.Shared;
 public static class Globals
 {
     public static string VersionString => Version.GetDisplayString(EVersionStringType.IdentifierPrefix);
-    public static readonly FPVersion Version = new(3, 0, 0, 2);
+    public static readonly FPVersion Version = new(TEST,4, 0, 0, 0);
     
     public static readonly FilePickerFileType MappingsFileType = new("Unreal Mappings") { Patterns = [ "*.usmap" ] };
     public static readonly FilePickerFileType JSONFileType = new("JSON") { Patterns = [ "*.json" ] };
@@ -27,9 +27,4 @@ public static class Globals
     
     public static readonly FGuid ZERO_GUID = new();
     public const string ZERO_CHAR = "0x0000000000000000000000000000000000000000000000000000000000000000";
-    
-    public const string DISCORD_URL = "https://discord.gg/FortnitePorting";
-    public const string TWITTER_URL = "https://twitter.com/FortnitePorting";
-    public const string GITHUB_URL = "https://github.com/h4lfheart/FortnitePorting";
-    public const string KOFI_URL = "https://ko-fi.com/halfuwu";
 }
